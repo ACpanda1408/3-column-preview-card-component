@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap');
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  color: white;
+}
+.container{
+  width: 90%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.card{
+  padding: 3em 1.5em;
+}
+.card > *{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+#SUVs{
+  background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 40px;
+}
+p, button{
+  font-family: 'Lexend Deca', sans-serif;
+}
+button{
+  background-color: white;
+  border-radius: 30px;
+  border: none;
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  transition: all .5s ease;
+}
+#sedans button{
+  color: hsl(31, 77%, 52%);
+}
+#SUVs button{
+  color: hsl(184, 100%, 22%);
+}
+#luxury button{
+  color: hsl(179, 100%, 13%);
+}
+#sedans button:hover{
+  background-color: hsl(31, 77%, 52%);
+  border: solid 1px white;
+  color: white;
+}
+#SUVs button:hover{
+  background-color: hsl(184, 100%, 22%);
+  border: solid 1px white;
+  color: white;
+}
+#luxury button:hover{
+  background-color: hsl(179, 100%, 13%);
+  border: solid 1px white;
+  color: white;
+}
+@media only screen and (min-width: 600px){
+  .container{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    height: 50%;
+    width: 80%;
+  }
+  body{
+    height: 80vh;
+  }
+}
